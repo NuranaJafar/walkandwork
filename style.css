@@ -1,0 +1,136 @@
+/* Əsas stil */
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #f3e5f5; /* Pastel lila */
+  color: #333;
+}
+
+header {
+  position: relative;
+  height: 300px;
+  background: url('https://cdn.discordapp.com/attachments/1109760643579531384/1362110546391863456/Baslksz35_20250416210040.jpg?ex=680133cd&is=67ffe24d&hm=d030a12f2d85f64ab4cafa8741c8ed5f431229d5c638cb65ef48f121a06d5a97&') center center / cover no-repeat;
+}
+
+nav {
+  background-color: #d9d4ec;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.bubble {
+  background-color: #ffffff;
+  border: 2px solid #e0d4f7;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 10px auto;
+  transition: transform 0.3s;
+}
+
+/* Bölməyə görə pastel rəng fonları */
+#home .bubble { background-color: #fffaf3; }
+#about .bubble { background-color: #f3fff7; }
+#services .bubble { background-color: #f5faff; }
+#blog .bubble { background-color: #fef9ff; }
+#team .bubble { background-color: #f3f2ff; }
+
+footer {
+  background-color: #e6d8f4;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Instagram düyməsi */
+.insta-btn {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #C13584;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.insta-btn img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.insta-btn:hover {
+  background-color: #a72c74;
+}
+
+/* Mobil uyumlu stil */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  section {
+    padding: 20px 15px;
+    margin: 10px auto;
+  }
+
+  .bubble {
+    padding: 15px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .insta-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .insta-btn img {
+    width: 60%;
+  }
+}
